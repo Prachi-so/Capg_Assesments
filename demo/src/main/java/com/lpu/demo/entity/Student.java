@@ -1,0 +1,40 @@
+package com.lpu.demo.entity;
+
+import java.io.Serializable;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
+public class Student implements Serializable {
+	//for redis
+	private static final long serialVersionUID = 1L;
+	@Id
+	private int id;
+	private String name;
+	private long phone;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public long getPhone() {
+		return phone;
+	}
+	public void setPhone(long phone) {
+		this.phone = phone;
+	}
+	public Student() {
+		super();
+	}
+	
+	
+
+}
